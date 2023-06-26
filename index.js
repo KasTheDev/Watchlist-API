@@ -25,6 +25,7 @@ searchInput.addEventListener('keypress', function(event) {
   if (event.keyCode === 13) {
     event.preventDefault()
     performSearch()
+    errorContainer.innerHTML = ""
   }
 })
 
@@ -35,8 +36,7 @@ async function getImdb(searchInput) {
         for (let i = 0; i < data.Search.length; i++) {
             imdbIDArray.push(data.Search[i].imdbID);
         }
-    } catch (error) {
-        console.log("hi") 
+    } catch (error) { 
             errorContainer.innerHTML =`
         <div class="no-data-container">
             <p class="not-found-message">Unable to find what you're looking for... Please try another search.</p>
