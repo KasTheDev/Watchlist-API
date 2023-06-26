@@ -103,13 +103,13 @@ header h2 {
 
 .no-data-initial {
     padding-top: 30px;
-    color: #DFDDDD;
+    color: #787878;
     font-size: 18px;
     font-weight: 700;
 }
 
 .no-data-search-link {
-    color: #363636;
+    color: white;
     text-decoration: none;
 }
 
