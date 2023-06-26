@@ -233,6 +233,8 @@ p{
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-end;
         max-width: 1024px; 
         margin: 0 auto; 
   }
