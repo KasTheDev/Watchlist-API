@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    </head>
+    <body>
+        <header>
+            <div class="text-container">
+                <h2>Find your film</h2>
+                <a class="watchlist" href="watchlist.html">My watchlist</a>
+            </div>
+            <img src="images/theatre.jpg">
+        </header>
+        
+        <div class="search-container">
+            <input type="search" id="movie-search" class="movie-search" placeholder='🔍 Search for a movie'>
+            <button id="search-btn" class="search-btn">Search</button>
+        </div>
+        
+        <div id="movie-container" class="movie-container">
+            <div id="no-data-container" class="no-data-container">
+                <img class="no-data-img" src="images/Icon.png">
+                <h1 class="no-data-initial">Start exploring</h1>
+            </div>
+        </div>
+        
+        <div id="error-container">
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
